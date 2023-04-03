@@ -5,11 +5,12 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/google/go-github/v30/github"
 	"go.uber.org/zap"
-	"golang.org/x/oauth2"
-	"moul.io/depviz/v3/internal/dvmodel"
 	"moul.io/multipmuri"
+
+	"github.com/Doozers/depviz/internal/dvmodel"
+	"github.com/google/go-github/v30/github"
+	"golang.org/x/oauth2"
 )
 
 type Opts struct {

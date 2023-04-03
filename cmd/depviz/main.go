@@ -11,21 +11,22 @@ import (
 	"os/signal"
 	"time"
 
+	"go.uber.org/zap"
+	"moul.io/banner"
+	"moul.io/srand"
+	"moul.io/u"
+	"moul.io/zapconfig"
+
+	"github.com/Doozers/depviz/internal/dvcore"
+	"github.com/Doozers/depviz/internal/dvparser"
+	"github.com/Doozers/depviz/internal/dvserver"
+	"github.com/Doozers/depviz/internal/dvstore"
 	"github.com/cayleygraph/cayley"
 	"github.com/cayleygraph/cayley/graph"
 	_ "github.com/cayleygraph/cayley/graph/kv/bolt"
 	"github.com/cayleygraph/cayley/schema"
 	"github.com/oklog/run"
 	"github.com/peterbourgon/ff/v3/ffcli"
-	"go.uber.org/zap"
-	"moul.io/banner"
-	"moul.io/depviz/v3/internal/dvcore"
-	"moul.io/depviz/v3/internal/dvparser"
-	"moul.io/depviz/v3/internal/dvserver"
-	"moul.io/depviz/v3/internal/dvstore"
-	"moul.io/srand"
-	"moul.io/u"
-	"moul.io/zapconfig"
 )
 
 var (

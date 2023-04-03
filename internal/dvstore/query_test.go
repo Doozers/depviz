@@ -6,12 +6,13 @@ import (
 	"strings"
 	"testing"
 
-	_ "github.com/cayleygraph/quad/json"
-	"github.com/stretchr/testify/assert"
-	"moul.io/depviz/v3/internal/dvparser"
-	"moul.io/depviz/v3/internal/testutil"
 	"moul.io/godev"
 	"moul.io/multipmuri"
+
+	"github.com/Doozers/depviz/internal/dvparser"
+	"github.com/Doozers/depviz/internal/testutil"
+	_ "github.com/cayleygraph/quad/json"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestLoadTasks(t *testing.T) {

@@ -5,12 +5,13 @@ import (
 	"os"
 	"testing"
 
+	"moul.io/multipmuri"
+
+	"github.com/Doozers/depviz/internal/dvstore"
+	"github.com/Doozers/depviz/internal/testutil"
 	"github.com/cayleygraph/cayley/graph"
 	"github.com/cayleygraph/quad"
 	"github.com/stretchr/testify/assert"
-	"moul.io/depviz/v3/internal/dvstore"
-	"moul.io/depviz/v3/internal/testutil"
-	"moul.io/multipmuri"
 )
 
 func TestPullAndSave(t *testing.T) {

@@ -8,18 +8,19 @@ import (
 	"os"
 	"sync"
 
-	"github.com/cayleygraph/cayley"
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/schema"
 	"go.uber.org/zap"
 	yaml "gopkg.in/yaml.v2"
-	"moul.io/depviz/v3/internal/dvmodel"
-	"moul.io/depviz/v3/internal/dvparser"
-	"moul.io/depviz/v3/internal/dvstore"
-	"moul.io/depviz/v3/internal/githubprovider"
 	"moul.io/graphman"
 	"moul.io/graphman/viz"
 	"moul.io/multipmuri"
+
+	"github.com/Doozers/depviz/internal/dvmodel"
+	"github.com/Doozers/depviz/internal/dvparser"
+	"github.com/Doozers/depviz/internal/dvstore"
+	"github.com/Doozers/depviz/internal/githubprovider"
+	"github.com/cayleygraph/cayley"
+	"github.com/cayleygraph/cayley/graph"
+	"github.com/cayleygraph/cayley/schema"
 )
 
 type GenOpts struct {

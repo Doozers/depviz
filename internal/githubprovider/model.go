@@ -4,14 +4,15 @@ import (
 	"fmt"
 	"regexp"
 
+	"go.uber.org/zap"
+	"moul.io/multipmuri"
+	"moul.io/multipmuri/pmbodyparser"
+
+	"github.com/Doozers/depviz/internal/dvmodel"
+	"github.com/Doozers/depviz/internal/dvparser"
 	"github.com/cayleygraph/quad"
 	"github.com/google/go-github/v30/github"
 	"github.com/xhit/go-str2duration/v2"
-	"go.uber.org/zap"
-	"moul.io/depviz/v3/internal/dvmodel"
-	"moul.io/depviz/v3/internal/dvparser"
-	"moul.io/multipmuri"
-	"moul.io/multipmuri/pmbodyparser"
 )
 
 const (

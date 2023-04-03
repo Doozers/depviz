@@ -9,6 +9,13 @@ import (
 	"strings"
 	"time"
 
+	"go.uber.org/zap"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/credentials/insecure"
+	"moul.io/multipmuri"
+
+	"github.com/Doozers/depviz/internal/dvcore"
+	"github.com/Doozers/depviz/pkg/chiutil"
 	"github.com/cayleygraph/cayley"
 	"github.com/cayleygraph/cayley/schema"
 	"github.com/go-chi/chi"
@@ -23,12 +30,6 @@ import (
 	cache "github.com/patrickmn/go-cache"
 	"github.com/rs/cors"
 	chilogger "github.com/treastech/logger"
-	"go.uber.org/zap"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	"moul.io/depviz/v3/internal/dvcore"
-	"moul.io/depviz/v3/pkg/chiutil"
-	"moul.io/multipmuri"
 )
 
 const (

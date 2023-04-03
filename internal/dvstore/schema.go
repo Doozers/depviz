@@ -1,8 +1,8 @@
 package dvstore
 
 import (
+	"github.com/Doozers/depviz/internal/dvmodel"
 	"github.com/cayleygraph/cayley/schema"
-	"moul.io/depviz/v3/internal/dvmodel"
 )
 
 func Schema() *schema.Config {
