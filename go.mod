@@ -1,4 +1,4 @@
-module github.com/Doozers/depviz
+module github.com/Doozers/depviz/v3
 
 go 1.19
 
